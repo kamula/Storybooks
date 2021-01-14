@@ -8,8 +8,8 @@ const connectDb = require('./config/db')
     //load config
 dotenv.config({ path: './config/config.env' })
 
-//connectDb()
-//environment
+connectDb()
+    //environment
 const app = express()
 if (process.env.NODE_ENV === 'development') {
     app.use(morgan('dev'))
